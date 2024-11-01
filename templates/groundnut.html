@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="static/styles.css">
+    <head>
+        <script>
+            function english(){
+                var element = document.getElementById("tel");
+                element.style.display="none";
+                var el= document.getElementById("eng");
+                el.style.display='block';
+            }
+            function telugu(){
+                var el= document.getElementById("eng");
+                el.style.display='none';
+                var element = document.getElementById("tel");
+                element.style.display="block";
+            }
+            function yeildpre(){
+                var ye=document.getElementById("yeild")
+                ye.style.display='block'
+            }
+            function sub(){
+                window.alert("production:"+"{{res11}}")
+            }
+           
+        
+        </script>
+    </head>
+    <body>
+        <div><h1 style="text-align: center;">Grow and Care for Groundnut</h1></div>
+        <h1>{{res1}}</h1>
+
+        <img src="https://tse2.mm.bing.net/th?id=OIP.gEnrPPP3HcLHIEt9Ww6nHAHaFj&pid=Api&P=0&h=180"/>
+        <button onclick="english()">English</button>&nbsp;<button onclick="telugu()">Telugu</button><br/>
+        <section>
+            <button class="button-29"><a href="/yield">Yield Prediction</a></button>
+        </section>
+        <div id="yeild" style="display: none;">
+            <form style="text-align: center;" method='post'action="/result1">
+                <table>
+                    <tr>
+                        <th>State_name:</th>
+                        <td>
+                            <select name="state">
+                                <option> ---select---</option>
+                                <option value="1">Andhra pradesh</option>
+                                <option value="3">telengena</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>crop:</th>
+                        <td>
+                            <select name="crop">
+                                <option> ---select---</option>
+                                <option value="2">rice</option>
+                                <option value="116">apple</option>
+                                <option value="3">Banana</option>
+                                <option value="3">Blackgram</option>
+                                <option value="3">chickpea</option>
+                                <option value="5">coconut</option>
+                                <option value="98">coffee</option>
+                                <option value="22">cotton</option>
+                                <option value="47">grapes</option>
+                                <option value="122">jute</option>
+                                <option value="42">kidneybeans</option>
+                                <option value="3">lentil</option>
+                                <option value="14">maize</option>
+                                <option value="48">mango</option>
+                                <option value="3">mothbeans</option>
+                                <option value="3">mungbean</option>
+                                <option value="3">muskmelon</option>
+                                <option value="49">orange</option>
+                                <option value="53">papaya</option>
+                                <option value="3">pigeonpeas</option>
+                                <option value="60">pomegranate</option>
+                                <option value="101">Watermelon</option>
+                            </select>
+                        </td>
+                       
+                    </tr>
+                    <tr>
+                        <th>Area:</th>
+                        <td><input type="text" name="area"/></td>
+                    </tr>
+                    <tr>
+                        <th>Season:</th>
+                        <td>
+                            <select name="season">
+                                <option> ---select---</option>
+                                <option value="1">karif</option>
+                                <option value="2">whole year</option>
+                                <option value="4">Rabi</option>
+                                <option value="3">Autumn</option>
+                                <option value="5">Summer </option>
+                                <option value="6">Winter</option>
+                            </select>
+                        </td>
+                        
+                    </tr>
+                    <tr>
+                        <th> <button  onclick="sub()" >Submit</button></th>
+                    </tr>
+                </table>
+                
+            </form>
+        </div>
+        <div id="eng" translate="yes">
+            
+            <p>Groundnut, ‘the unpredictable legume’ is also known as earthnut, peanut, monkey nut and manilla nut. It is the 13th most important food crop and 4th most important oilseed crop of the world. The botanical name Arachis hypogaea L. has been derived from the Greek words, Arachis meaning a legume and hypogaea meaning below ground referring to geocarpic nature of pod formation.</p>
+               <h1>Selecting a Planting Site</h1>
+<p>An ideal planting site for cilantro should have loose, well-drained soil. It can handle either full sun or partial shade but tends to prefer some afternoon shade in warmer climates. Make sure cilantro isn’t planted too close to taller plants that will shade it as they leaf out in the spring. Container growth also is a good option for cilantro.</p>
+
+            <P></P>
+            <table border="1px">
+                <tr>
+                    <th>Botanical Name</th>
+                    <td>Arachis hypogaea</td>
+                </tr>
+                <tr>
+                    <th>Common Name</th>
+                    <td>peanut,groundnut</td>
+                </tr>
+                
+                <tr>
+                    <th>Sun Exposure</th>
+                    <td>Full sun</td>
+                </tr>
+                <tr>
+                    <th>Size</th>
+                    <td>30 to 50 cm</td>
+                </tr>
+                <tr>
+                    <th>Soil Needs</th>
+                    <td>Loamy, sandy, well-drained</td>
+                </tr>
+            </table>
+        
+            <section id="plant">
+                <h1>How to Plant Groundnut</h1>
+                <p>Preparing the soil properly is essential for success and high yields. Here are some details to follow for soil preparation. As mentioned, conduct a soil test to determine the soil’s pH level, nutrient content, and composition. This will help understand the soil’s fertility and identify any deficiencies or imbalances that need addressing. Clear the land of any weeds, rocks, or debris that may hinder groundnut cultivation. Remove any large vegetation or obstacles that could interfere with planting or harvesting.
+
+Plow the field to break up the soil and turn it over. Plowing helps to loosen the soil, improve aeration, and facilitate root penetration. Aim for a depth of around 15 to 20 centimeters (6 to 8 inches and beyond this depth is not recommended) to ensure good seedbed or ridge and furrow preparation. After plowing, level the field to create a smooth and even surface. This facilitates irrigation and prevents water stagnation. It also helps in uniform planting and harvesting operations</p>
+                
+                <div style="background-color: aqua;"><p><h3>Tip:</h3></p></div>
+            </section>
+            <section>
+                <h1>Groundnut Care</h1>
+                <p><h3>Light</h3> <br/>It requires a long and warm growing season</p>
+                <p><h3>Soil</h3><br/>Groundnut thrives best in well-drained sandy and sandy loam soils, as light soil helps in easy penetration of pegs and their development and also harvesting. 
+
+</p>
+                <p><h3>Water</h3><br/>Being a rainy season crop, groundnut does not require irrigation However, if a dry spell occurs, irrigation may become necessary.
+
+</p>
+                <p><h3>Temperature and Humidity</h3><br/>Cilantro thrives best in relatively cool environments, preferring temperatures that hover between 60 and 70 degrees Fahrenheit—too hot and the plant can bolt easily. However, though cilantro is a cool-weather herb, it is still frost-sensitive. Keep row covers handy to protect your plants if unseasonably cool weather is predicted. Cilantro also struggles in high humidity and climates that get a lot of rain.</p>
+                <p><h3>Fertilizer</h3><br/>Cilantro typically does not need fertilizer to grow successfully, but treating it monthly with an organic blend made for herbs can't hurt. Additionally, feel free to mix a nutritious compost or other organic matter into your soil to help the plants thrive, especially when first planting seeds.</p>
+                <p></p>
+            </section>
+            <section>
+                <h1>Groundnut Varieties</h1>
+                <p>Groundnut of Coriander</p>
+                <ul>
+                    <li><b>'Spanish peanuts'</b>:Variety of peanut is normally grown the state of Texas and Oklahoma, their nuts have bright red skins.
+This Variety of peanuts is used in candies or sold as salted, shelled peanuts for snacking and are also used in the manufacturing of peanut butte</li>
+                    <li><b>'Valencia peanuts'</b> is usually found and produced in New Mexico. it is regarded as the most tasty of all the Varieties of peanuts and is therefore very popular for all natural and homemade peanut butters.</li>
+                    <li><b>'Runner peanut'</b>These are primarily cultivated in these U.S. states, Georgia, Alabama and Florida, and Georgia is the highest producer of this Variety, producing about 40 percent of the U.S. peanut crop of this Variety.</li>
+                    <li><b>'Cruise'</b>Upright habit and strong stems on uniform plants; matures in 50 to 55 days</li>
+                </ul>
+            
+            </section>
+            <section>
+                <h1>Harvesting</h1>
+                <p>Peanut ( ground nut ) is a root crop, so the harvest takes place in the ground, on its roots.
+
+On an average, a peanut plant takes about 3 or 4 months to be matured and due for harvest.
+
+To know when they have matured enough for harvest, their leaves will turn from Green to yellow and some of them will look Wilt and dry. At this stage, they are fully matured and ready to be harvested, and any further delay might result in rot or decay or might even attract bunch of insects.
+
+To harvest them, you need to be very careful in order not to destroy the peanut s in the Ground.
+
+You need either a hoe or a spade to harvest them.</p>
+                </ul>
+                <p>Cilantro leaves are best used fresh but will keep in the refrigerator for a few days. Cilantro loses its flavor when dried, so fresh use is best. Once they're fully dry, store coriander seeds in an airtight container in a cool, dry spot.</p>
+            
+            </section>
+            <section>
+                <h1>     Common Pests and Diseases           </h1>
+                <p>Cilantro is generally resistant to any serious pest or disease issues. Soil that’s too moist can cause rot. The strong fragrance of cilantro typically repels pests, but some common insect pests, including aphids and leaf hoppers, might affect the plants. Use an insecticidal soap that’s safe for edible plants if you spot any pests.</p>
+			</section>
+        </div>
+        <div id="tel" style="display: none;">
+            <p> </p>
+        </div>
+
+    </body>
+</html>

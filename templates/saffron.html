@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="static/styles.css">
+
+        <script>
+            function english(){
+                var element = document.getElementById("tel");
+                element.style.display="none";
+                var el= document.getElementById("eng");
+                el.style.display='block';
+            }
+            function telugu(){
+                var el= document.getElementById("eng");
+                el.style.display='none';
+                var element = document.getElementById("tel");
+                element.style.display="block";
+            }
+            function yeildpre(){
+                var ye=document.getElementById("yeild")
+                ye.style.display='block'
+            }
+            function sub(){
+                window.alert("production:"+"{{res11}}")
+            }
+           
+        
+        </script>
+    </head>
+    <body>
+        <div><h1 style="text-align: center;">Grow and Care for saffron</h1></div>
+        <h1>{{res1}}</h1>
+
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhktwbulm766ue52GhBQ3Jm7iOVZD9_-B18kcvOK8YIv0EoADBo3L01xQK7_qewvb2kQUPPZXh1XrVzganMPs-gYGP3IJtkOmmx4NP1HlZFyCgVVWf5pINksnfpNOGo11G8uQcEqSWhLXrqlF06Tz3gTOLDToq3QDC2HJVzb0CA64NLwGWqMN_UMrbF/s600/Saffron.jpg"/>
+        <button onclick="english()">English</button>&nbsp;<button onclick="telugu()">Telugu</button><br/>
+        <section>
+            <button onclick="yeildpre()" >crop yeild prediction</button>
+        </section>
+        <div id="yeild" style="display: none;">
+            <form style="text-align: center;" method='post'action="/result1">
+                <table>
+                    <tr>
+                        <th>State_name:</th>
+                        <td>
+                            <select name="state">
+                                <option> ---select---</option>
+                                <option value="1">Andhra pradesh</option>
+                                <option value="3">telengena</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>crop:</th>
+                        <td>
+                            <select name="crop">
+                                <option> ---select---</option>
+                                <option value="2">rice</option>
+                                <option value="116">apple</option>
+                                <option value="3">Banana</option>
+                                <option value="3">Blackgram</option>
+                                <option value="3">chickpea</option>
+                                <option value="5">coconut</option>
+                                <option value="98">coffee</option>
+                                <option value="22">cotton</option>
+                                <option value="47">grapes</option>
+                                <option value="122">jute</option>
+                                <option value="42">kidneybeans</option>
+                                <option value="3">lentil</option>
+                                <option value="14">maize</option>
+                                <option value="48">mango</option>
+                                <option value="3">mothbeans</option>
+                                <option value="3">mungbean</option>
+                                <option value="3">muskmelon</option>
+                                <option value="49">orange</option>
+                                <option value="53">papaya</option>
+                                <option value="3">pigeonpeas</option>
+                                <option value="60">pomegranate</option>
+                                <option value="101">Watermelon</option>
+                            </select>
+                        </td>
+                       
+                    </tr>
+                    <tr>
+                        <th>Area:</th>
+                        <td><input type="text" name="area"/></td>
+                    </tr>
+                    <tr>
+                        <th>Season:</th>
+                        <td>
+                            <select name="season">
+                                <option> ---select---</option>
+                                <option value="1">karif</option>
+                                <option value="2">whole year</option>
+                                <option value="4">Rabi</option>
+                                <option value="3">Autumn</option>
+                                <option value="5">Summer </option>
+                                <option value="6">Winter</option>
+                            </select>
+                        </td>
+                        
+                    </tr>
+                    <tr>
+                        <th> <button  onclick="sub()" >Submit</button></th>
+                    </tr>
+                </table>
+                
+            </form>
+        </div>
+        <div id="eng" translate="yes">
+            <h1> </h1>
+            <p>Commercial saffron farming is not a new business idea. It’s a pretty old business and many people are already doing this business in many countries around the world.There are some doubts remain on the origin of saffron, but it is believed that saffron originated in Iran. However, Greece and Mesopotamia have also been suggested as the possible region of origin of this plant.Saffron is actually the most expensive spice in the world and it is derived from the dry stigmata of the saffron crocus plant (Crocus sativus). It has long been the world’s costliest spice by weight.</p>
+            <p>The vivid crimso stigma and styles, called threads are collected and dried for use mainly as a seasoning and coloring agent in food.Saffron’s taste and iodoform-like or hay-like fragrance result from the phytochemicals picrocrocin and safranal. It also contains a carotenoid pigment, crocin, which imparts a rich golden-yellow hue to dishes and textiles.[1]Saffron is known by different names in different parts of the world. But it is popularly known as ‘Red Gold’. The saffron plant is a bulbous, perennial with globular corms, having 15 to 20 cm height.Saffron is mainly cultivated in Spain, Austria, France, Greece, Iran, Turkey and England. Among all these countries Iran alone produces around 90% of the world total production. Saffron is the world’s most expensive spice, at US$5,000 per kg or even higher.
+                <br/>Actually, saffron’s price depends on the intense labor needed to harvest the crop, not because it is difficult to grow. Actually growing saffron is very easy and simple.
+                </p>
+                
+            <table border="1px">
+                <tr>
+                    <th>Botanical Name</th>
+                    <td>Botanical Name</td>
+                </tr>
+                <tr>
+                    <th>Common Name</th>
+                    <td>saffron</td>
+                </tr>
+                <tr>
+                    <th>Plant Type</th>
+                    <td>annual flower vine</td>
+                </tr>
+                <tr>
+                    <th>Sun Exposure</th>
+                    <td>Full sun</td>
+                </tr>
+                <tr>
+                    <th>Size</th>
+                    <td>9 to 18 in.</td>
+                </tr>
+                <tr>
+                    <th>Soil Needs</th>
+                    <td>Loamy, sandy, well-drained</td>
+                </tr>
+            </table>
+        
+            <section id="plant">
+                <h1>How to Plant saffron</h1>
+                <p>Starting commercial saffron farming business is very easy and simple. Even the beginners can also start this business easily for making money.Although, having practical knowledge from an experienced farmer will be very beneficial for your business. Here we are trying to describe more information about starting and operating a successful saffron farming business.</p>
+                <h3>site selection</h3>
+				<p>Saffron grows well in acidic to neutral, gravelly, loamy and sandy soils. It requires well-drained soils and the optimum pH level of the soil should be between 6 and 8.</p>
+                <h3>planting</h3>
+				<p>You can plant saffron corms directly in the field for commercial production, or in pots for small scale production or in home garden. You should plant the corms at 12 to 15 cm deep by maintaining 10-12 cm spacing between them.Irrigation is not needed after planting, however in case of prolonged drought and hot season watering can be carried out depending on the soil moisture content. Saffron corms generally multiply from one year to the next and 1 corm get 5 corms after 3 years of planting.</p>
+            </section>
+            <section>
+                <h1>saffron Care</h1>
+                <p><h3>mulching</h3> <br/>Mulching helps to retain moisture into the soil and it also helps to control weeds. You can use organic materials for using as mulch.</p>
+                <p><h3>Soil</h3><br/>Preparing the soil perfectly is the most important part of commercial saffron farming business. Try to make the field weed free and add as much organic matter as you can.Perform couple of ploughings for bringing the soil to the fine tilth stage and soil loosening is also required before planting the corns for better growth.</p>
+                <p><h3>Water</h3><br/>Irrigation is not needed immediately after planting. But in case of prolonged drought and hot season watering can be carried out depending on the soil moisture content.</p>
+                <p><h3>Temperature and Humidity</h3><br/>Generally, winter is the vegetative growth season and leaves will be dried out in the month of May. Saffron can nonetheless survive cold winters, tolerating frosts as low as −10 °C (14 °F) and short periods of snow cover.</p>
+                <p><h3>Fertilizer</h3><br/>You have to apply adequate organic fertilizers during the time of land preparation. And annual application of 80 kg P, 30 kg K and 20 kg N per hectare is beneficial. Apply these fertilizers in autumn and again immediately after flowering.</p>
+                <p><h3>controlling weeds</h3><br/>Mulching with organic matter will prevent most of the weeds. Regular hand weeding is a must, and application of weedicides can be effective in commercial production.</p>
+            </section>
+            
+            <section>
+                <h1>Harvesting</h1>
+                <p>Flowering generally starts in the month of October and last for a month. And harvesting should be carried when the flowers are in full bloom stage and early morning picking is proffered. Extract the red pistils from the flowers after harvesting the flowers.</p>
+                <h3>post harvesting</h3>
+				<p>Drying of filaments can be done by putting the pistils on a sieve in a well ventilated place for 15 minutes. Fresh saffron generally does not have any taste and it is recommended that dried saffron should be placed in an airtight container away from the light for at least 1 month before it’s consumption.</p>
+				
+            </section>
+            <section>
+                <h1>     Common Pests and Diseases           </h1>
+                <p>Like many other commercial crops, the saffron plants are also susceptible to some common pests and diseases. There are actually 3 main diseases Fusarium, Rhizoctonia crocorum and Violet root rot found in the saffron farming.Contact your local horticulture department for control measures. It is also recommended that the same field should not be used again for 8-10 years.</p>
+			</section>
+        </div>
+        <div id="tel" style="display: none;">
+            <p> </p>
+        </div>
+
+    </body>
+</html>

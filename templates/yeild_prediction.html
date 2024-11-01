@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crop Yield Prediction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+background-size: cover; /* or background-size: contain; */
+    background-repeat: no-repeat;
+            background-image: url("https://images.pexels.com/photos/1595107/pexels-photo-1595107.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+        }            
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        table {
+            width: 100%;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            width: 40%;
+        }
+
+        select, input[type="text"], button {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 5px;
+            margin-bottom: 10px;
+        }
+
+        .button-71{
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 10px;
+            border-radius: 4px;                                                                                                                             
+            cursor: pointer;
+            transition: background-color 0.3s;
+
+        }
+
+        .button-71 {
+  background-color:#4CAF50;
+  border: 0;
+  border-radius: 56px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: system-ui,-apple-system,system-ui,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  outline: 0;
+  padding: 16px 21px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: all .3s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-71:before {
+  background-color: initial;
+  background-image: linear-gradient(#fff 0, rgba(255, 255, 255, 0) 100%);
+  border-radius: 125px;
+  content: "";
+  height: 5%;
+  left: 4%;
+  opacity: .5;
+  position: absolute;
+  top: 0;
+  transition: all .3s;
+  width: 20%;
+}
+
+.button-71:hover {
+  box-shadow: rgba(255, 255, 255, .2) 0 3px 15px inset, rgba(0, 0, 0, .1) 0 3px 5px, rgba(0, 0, 0, .1) 0 10px 13px;
+  transform: scale(1.05);
+}
+
+@media (min-width: 768px) {
+  .button-71 {
+    padding: 16px 48px;
+  }
+}
+
+        option {
+            background-color: #fff;
+        }
+
+        option:hover,select:hover {
+            background-color: #f0f0f0;
+        }
+
+        th:hover {
+            background-color: #f0f0f0;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <form action="/yield1" method="post">
+        <h1>Crop Yield Prediction</h1>
+        <table>
+            <tr>
+                <th>State Name</th>
+                <td>
+                    <select name="state">
+                        <option> ---select---</option>
+                        <option value="1">Andhra Pradesh</option>
+                        <option value="3">Telangana</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th>Crop</th>
+                <td>
+                    <select name="crop">
+                        <option> ---select---</option>
+                        <option value="2">Rice</option>
+                        <option value="116">Apple</option>
+                        <option value="3">Banana</option>
+                        <option value="74">Blackgram</option>
+                        <option value="3">Chickpea</option>
+                        <option value="5">Coconut</option>
+                        <option value="98">Coffee</option>
+                        <option value="22">Cotton</option>
+                        <option value="47">Grapes</option>
+                        <option value="72">Jute</option>
+                        <option value="42">Kidneybeans</option>
+                        <option value="105">Lentil</option>
+                        <option value="14">Maize</option>
+                        <option value="48">Mango</option>
+                        <option value="3">Mothbeans</option>
+                        <option value="3">Mungbean</option>
+                        <option value="101">Muskmelon</option>
+                        <option value="49">Orange</option>
+                        <option value="53">Papaya</option>
+                        <option value="3">Pigeonpeas</option>
+                        <option value="60">Pomegranate</option>
+                        <option value="101">Watermelon</option>
+                        <option value="38">Coriande</option>
+                        <option value="68">garlic</option>
+                        <option value="34">onion</option>
+                        <option value="89">potato</option>
+                        <option value="7">Sugarcane</option>
+                        <option value="19">Sunflower</option>
+                        <option value="13">temaric</option>
+                        <option value="29">wheat</option>
+                        <option value="15">green gram</option>
+                        <option value="16">urad</option>
+                        <option value="18">groundnut</option>
+                        <option value="29">wheat</option>
+                        <option value="56">Rapesed&mustard</option>
+                        <option value="17">Arhar/Tur</option>
+                        <option value="28">Gram</option>
+                        <option value="24">Jowar</option>
+                        <option value="11">Chillies</option>
+                        <option value="20">Bajra</option>
+                        <option value="71">Peas&beans</option>
+                        <option value="77">Barley</option>
+                        <option value="58">Cowpea</option>
+                        <option value="30">Masoar</option>
+                        <option value="26">Ragi</option>
+                        <option value="19">safflower</option>
+
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th>Area</th>
+                <td><input type="text" name="area"/></td>
+            </tr>
+            <tr>
+                <th>Season</th>
+                <td>
+                    <select name="season">
+                        <option> ---select---</option>
+                        <option value="1">Kharif</option>
+                        <option value="2">Whole Year</option>
+                        <option value="4">Rabi</option>
+                        <option value="3">Autumn</option>
+                        <option value="5">Summer</option>
+                        <option value="6">Winter</option>
+                    </select>
+                </td>
+                <tr>
+                    <th>Year</th>
+                    <td>
+                        <input name="year"/>
+                    </td>
+            </tr>
+                
+            </table>
+            <center><button style="width:30%;height:0%" class="button-71">Submit</button></center>
+        <br/><br/>
+        <center>{{res}}kgs</center>
+    </form>
+
+</body>
+</html>

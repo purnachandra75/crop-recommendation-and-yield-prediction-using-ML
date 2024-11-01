@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Crop Recommendation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            background-image: url("https://img.freepik.com/free-photo/farmland_1112-1235.jpg");
+            background-size: cover; /* or background-size: contain; */
+    background-repeat: no-repeat;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            
+        }
+        form:hover{
+            box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;        }
+
+        h1 {
+            color: #333;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+/* CSS */
+.button-71 {
+  background-color: #0078d0;
+  border: 0;
+  border-radius: 56px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: system-ui,-apple-system,system-ui,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  outline: 0;
+  padding: 16px 21px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: all .3s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-71:before {
+  background-color: initial;
+  background-image: linear-gradient(#fff 0, rgba(255, 255, 255, 0) 100%);
+  border-radius: 125px;
+  content: "";
+  height: 50%;
+  left: 4%;
+  opacity: .5;
+  position: absolute;
+  top: 0;
+  transition: all .3s;
+  width: 92%;
+}
+
+.button-71:hover {
+  box-shadow: rgba(255, 255, 255, .2) 0 3px 15px inset, rgba(0, 0, 0, .1) 0 3px 5px, rgba(0, 0, 0, .1) 0 10px 13px;
+  transform: scale(1.05);
+}
+
+@media (min-width: 768px) {
+  .button-71 {
+    padding: 16px 48px;
+  }
+}
+        
+
+        input[type="text"]:hover {
+            border-color: #888;
+        }
+        input[type="text"]:hover  {
+            background-color: #f0f0f0;
+        }
+
+
+        input[type="text"]:focus {
+            outline: none;
+            border-color: #4CAF50;
+        }
+
+    </style>
+</head>
+<body>
+    <form method="post" action="/result">
+        <h1>Crop Recommendation Based on Soil Fertility</h1>
+        <table>
+            <tr>
+                <th>Nitrogen</th>
+                <td><input type="text" name="n" /></td>
+            </tr>
+            <tr>
+                <th>Humidity</th>
+                <td><input type="text" name="humidity" /></td>
+            </tr>
+            <tr>
+                <th>P</th>
+                <td><input type="text" name="p" /></td>
+                </tr><tr>
+                <th>Water Level</th>
+                <td><input type="text" name="rainfall" /></td>
+            </tr>
+            <tr>
+                <th>K</th>
+                <td><input type="text" name="k" /></td>
+                </tr><tr>
+                <th>Temperature</th>
+                <td><input type="text" name="temp" /></td>
+            </tr>
+            <tr>
+                <th>PH value</th>
+                <td><input type="text" name="ph" /></td>
+                </tr><tr>
+                <th>Season</th>
+                <td>
+                    <select name="season">
+                        <option> ---select---</option>
+                        <option value="0">Kharif</option>
+                       
+                        <option value="1">Rabi</option>
+                    </select>
+                </td>
+               
+            </tr>
+        </table>
+        <input type="submit" class="button-71" name="submit" value="Submit" />
+    </form>
+</body>
+</html>

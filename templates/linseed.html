@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="static/styles.css">
+
+        <script>
+            function english(){
+                var element = document.getElementById("tel");
+                element.style.display="none";
+                var el= document.getElementById("eng");
+                el.style.display='block';
+            }
+            function telugu(){
+                var el= document.getElementById("eng");
+                el.style.display='none';
+                var element = document.getElementById("tel");
+                element.style.display="block";
+            }
+            function yeildpre(){
+                var ye=document.getElementById("yeild")
+                ye.style.display='block'
+            }
+            function sub(){
+                window.alert("production:"+"{{res11}}")
+            }
+           
+        
+        </script>
+    </head>
+    <body>
+        <div><h1 style="text-align: center;">Grow and Care for Flax Plants(Linseed)</h1></div>
+        <h1>{{res1}}</h1>
+
+        <img src="https://www.thespruce.com/thmb/i_IGs1HGQLUi7K73PCUVkvFwR1Q=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/flax-flower-plant-care-and-growing-guide-5080961-01-8789bdb9d0ed49308a6290d304b7cb8a.jpg"/>
+        <button onclick="english()">English</button>&nbsp;<button onclick="telugu()">Telugu</button><br/>
+        <section>
+            <button class="button-29"><a href="/yield">Yield Prediction</a></button>
+        </section>
+        
+        <div id="eng" translate="yes">
+            <h1> </h1>
+            <p>Flax (Linum usitatissimum) is a rather tough plant that adds a certain whimsy to any wildflower garden and it is easy to grow. This erect annual herb grows up to three feet tall, donning numerous flat gray-green leaves. Flax plants require full sun and slightly acidic soil. Learn how to sow the seeds and care for the plants consistently to stretch the harvest from summer through autumn.</p>
+            <table border="1px">
+                <tr>
+                    <th>Botanical Name</th>
+                    <td>Linum usitatissimum</td>
+                </tr>
+                <tr>
+                    <th>Common Name</th>
+                    <td>Flax plant, flax, common flax, linseed</td>
+                </tr>
+                <tr>
+                    <th>Plant Type</th>
+                    <td>Annual, herb</td>
+                </tr>
+                <tr>
+                    <th>Sun Exposure</th>
+                    <td>Full sun</td>
+                </tr>
+                <tr>
+                    <th>Size</th>
+                    <td>1-3 ft. tall, 9-18 in. wide</td>
+                </tr>
+                <tr>
+                    <th>Soil Type</th>
+                    <td>Loamy, sandy, well-drained</td>
+                </tr>
+				<tr>
+					<th>Bloom Time</th>
+					<td>Spring, summer</td>
+				</tr>
+            </table>
+        
+            <section id="plant">
+                <h1>Flax Plant Care</h1>
+                <p>Here are the main care requirements for growing a flax plant:</p>
+                <li>Flax plants require full sun</li>
+				<li>Prefers slightly acidic soil</li>
+				<li>Likes to be moist but not water-logged</li>
+				<img src="https://www.thespruce.com/thmb/6U0j6DbqMTCxrwRjF4hIbKfLrmw=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/flax-flower-plant-care-and-growing-guide-5080961-03-2a7e5b6d5cf04b5ab4e2e605a650b68b.jpg"/>
+				<p><h3>Light</h3> <br/>Select a location that gets full sun. Flax cannot grow in shade.</p>
+                <p><h3>Soil</h3><br/>Flax plants prefer slightly acidic to neutral soil that is fertile and well-drained. Sandy or loamy soil is best. If soil is poor, prepare the site by mixing in a lot of organic matter such as compost or manure.
+
+Plants thrive close together. Sprinkle one tablespoon of seed per 10 square feet to welcome about 40 plants per square foot. Given that the seeds are very small, dust them with flour so that they will scatter more evenly.</p>
+                <p><h3>Water</h3><br/>Lightly rake the soil gently to bury seeds with a half-inch of soil. Tamp down the seeds to ensure they make direct contact with the soil. Finely spray with water thoroughly; this will provide proper moisture while not drowning the seeds. Continue to water regularly. Seeds will germinate in about 10 days.</p>
+                <p>As plants mature, dry conditions may cause them to become short and woody. Maintain generous moisture without drenching or waterlogging. Put a thin layer of mulch to control moisture and weeds. Avoid planting in regions where there are heavy storms and high winds, and keep away from salt spray.</p>
+				<p><h3>Temperature and Humidity</h3><br/>Flax grows best in a temperature range of 65 to 70 degrees Fahrenheit and a relative humidity of about 75%. This plant is frost tolerant.</p>
+				<p><h3>Fertilizer</h3><br/>Flax plants are sensitive to fertilizer and using it can injure seedlings. The plants usually don't require fertilizing.</p>
+                
+            </section>
+            <section>
+                <h1>Types of Flax Plant</h1>
+                
+                <ul>
+                    <li><b>'Golden flax':</b> Blooms with yellow flowers and reaches about 11 in. tall</li>
+                    <li><b>'Red flax':</b>A small plant (2-3 ft.) with dark reddish-brown leaves</li>
+                    <li><b>'spanish blue flax':</b>An Old World variety; produces blue flowers</li>
+                    <li><b>'Common flax':</b>Cultivated for it's edible seeds and oil</li>
+                </ul>
+                
+            </section>
+            <section>
+                <h1>     Common Pests and Diseases           </h1>
+                <p>Flax plants are prone to pests like flax bollworms, grasshoppers, cutworms, and potato aphids. While the latter three are general pests, the flax bollworm is the only one unique to the flax plant. Make sure to examine your plants regularly for signs of pests as they can cause damage if left untreated. Spraying is usually advised if an infestation is discovered.</p>
+			</section>
+        </div>
+        <div id="tel" style="display: none;">
+            <p> </p>
+        </div>
+
+    </body>
+</html>

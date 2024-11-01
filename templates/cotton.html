@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="static/styles.css">
+        <script>
+            function english(){
+                var element = document.getElementById("tel");
+                element.style.display="none";
+                var el= document.getElementById("eng");
+                el.style.display='block';
+            }
+            function telugu(){
+                var el= document.getElementById("eng");
+                el.style.display='none';
+                var element = document.getElementById("tel");
+                element.style.display="block";
+            }
+            function yeildpre(){
+                var ye=document.getElementById("yeild")
+                ye.style.display='block'
+            }
+            function sub(){
+                window.alert("production:"+"{{res11}}")
+            }
+           
+        
+        </script>
+    </head>
+    <body>
+        <div><h1 style="text-align: center;">Grow and Care for Cotton</h1></div>
+        <h1>{{res1}}</h1>
+
+        <img src="https://morningchores.com/wp-content/uploads/2019/07/cotton-on-plant.jpg"/>
+        <button onclick="english()">English</button>&nbsp;<button onclick="telugu()">Telugu</button><br/>
+        <section>
+            <button class="button-29"><a href="/yield">Yield Prediction</a></button>
+        </section>
+        <div id="yeild" style="display: none;">
+            <form style="text-align: center;" method='post'action="/result1">
+                <table>
+                    <tr>
+                        <th>State_name:</th>
+                        <td>
+                            <select name="state">
+                                <option> ---select---</option>
+                                <option value="1">Andhra pradesh</option>
+                                <option value="3">telengena</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>crop:</th>
+                        <td>
+                            <select name="crop">
+                                <option> ---select---</option>
+                                <option value="2">rice</option>
+                                <option value="116">apple</option>
+                                <option value="3">Banana</option>
+                                <option value="3">Blackgram</option>
+                                <option value="3">chickpea</option>
+                                <option value="5">coconut</option>
+                                <option value="98">coffee</option>
+                                <option value="22">cotton</option>
+                                <option value="47">grapes</option>
+                                <option value="122">jute</option>
+                                <option value="42">kidneybeans</option>
+                                <option value="3">lentil</option>
+                                <option value="14">maize</option>
+                                <option value="48">mango</option>
+                                <option value="3">mothbeans</option>
+                                <option value="3">mungbean</option>
+                                <option value="3">muskmelon</option>
+                                <option value="49">orange</option>
+                                <option value="53">papaya</option>
+                                <option value="3">pigeonpeas</option>
+                                <option value="60">pomegranate</option>
+                                <option value="101">Watermelon</option>
+                            </select>
+                        </td>
+                       
+                    </tr>
+                    <tr>
+                        <th>Area:</th>
+                        <td><input type="text" name="area"/></td>
+                    </tr>
+                    <tr>
+                        <th>Season:</th>
+                        <td>
+                            <select name="season">
+                                <option> ---select---</option>
+                                <option value="1">karif</option>
+                                <option value="2">whole year</option>
+                                <option value="4">Rabi</option>
+                                <option value="3">Autumn</option>
+                                <option value="5">Summer </option>
+                                <option value="6">Winter</option>
+                            </select>
+                        </td>
+                        
+                    </tr>
+                    <tr>
+                        <th> <button  onclick="sub()" >Submit</button></th>
+                    </tr>
+                </table>
+                
+            </form>
+        </div>
+        <div id="eng" translate="yes">
+		<p>Cotton is one of the world’s most important crops, used extensively in the textile industry for the production of various fabrics. Growing cotton can be a rewarding and fruitful endeavor if done with care and proper knowledge. In this comprehensive guide, we will cover all the essential aspects of cotton cultivation, from understanding its basics to the harvesting process. Whether you are a seasoned farmer or a beginner with a green thumb, this guide will provide you with valuable insights and practical tips for successfully growing cotton.</p>
+           
+               <h1>Selecting a Planting Site</h1>
+<p>Before planting cotton, it is crucial to select the right soil that provides optimal growing conditions. Cotton thrives in well-drained soil with a pH level between 5.8 and 7.5. This pH range ensures that the soil is neither too acidic nor too alkaline, creating the ideal environment for cotton plants to absorb essential nutrients</p>
+
+            <P></P>
+            <table border="1px">
+                <tr>
+                    <th>Botanical Name</th>
+                    <td>Gossypium</td>
+                </tr>
+                <tr>
+                    <th>Common Name</th>
+                    <td>Cotton</td>
+                </tr>
+                <tr>
+                    <th>Plant Type</th>
+                    <td>hibiscus</td>
+                </tr>
+                <tr>
+                    <th>Sun Exposure</th>
+                    <td>Full sun</td>
+                </tr>
+                
+                <tr>
+                    <th>Soil Needs</th>
+                    <td>Loamy, sandy, well-drained</td>
+                </tr>
+            </table>
+        
+            <section id="plant">
+                <h1>How to Plant Cotton</h1>
+                <p>Proper planting technique is vital to ensure optimal seed coverage and germination. Plant cotton seeds at a depth of 1 to 1.5 inches (2.5 to 3.8 cm) and space them around 4 to 6 inches (10 to 15 cm) apart. The rows should be spaced around 30 to 40 inches (76 to 102 cm) apart, allowing sufficient room for the plants to grow and develop.</p>
+                <div style="background-color: aqua;"><p><h3>Tip:</h3></p></div>
+            </section>
+            <section>
+                <h1>Cotton Care</h1>
+                <p><h3>Light</h3> <br/>Cotton needs full sun to be productive.</p>
+                <p><h3>Soil</h3><br/>. Cotton thrives in well-drained soil with a pH level between 5.8 and 7.5. This pH range ensures that the soil is neither too acidic nor too alkaline, creating the ideal environment for cotton plants to absorb essential nutrients..</p>
+                <p><h3>Water</h3><br/>Keep your growing cotton plants moist but not wet.  Too much water makes them prone to rot diseases. Water is especially important during the time the boll is developing.</p>
+
+</p>
+                <p><h3>Temperature and Humidity</h3><br/> thrive in subtropical regions with warm temperatures and moderate humidity levels. They can be grown outdoors in USDA hardiness zones 9 to 11 and begin to go dormant when temperatures dip below 50 degrees Fahrenheit.</p>
+                <p><h3>Fertilizer</h3><br/>Cotton is a heavy feeder and needs nitrogen and potash. It also appreciates an organic fertilizer such as fish emulsion. Organic fertilizers developed for tomatoes are well suited to your cotton plants.</p>
+            </section>
+			 <section>
+                <h1>Cotton Varieties</h1>
+                <p>Types of Cotton</p>
+				<p>Many of these colors were developed by slaves and black freedmen because they were not allowed to grow the “white” cotton of their masters. Colored cotton varieties weren’t as favored because they have shorter plant fibers, which are harder to spin and dye.</p>
+                <ul>
+                    <li><b>'Arkansas Green Lint Cotton:'</b> this variety produces yellow-pink flowers that make nice cut bouquets. The cotton is a light green and has short fibers with dark green seeds. It takes 135 days to mature. </li>
+                    <li><b>'Erlene’s Green Cotton:'</b> Another green variety that is known for its ease of spinning. After washing, the fibers take on a more yellowish-green color. Tall plants grow to five feet high and take 130 days to mature..</li>
+                    <li><b>'Mississippi Brown Cotton:'</b>This variety makes history come alive. It’s a cultivar that was once favored by slaves and makes a wonderful yarn. Plants grow five feet tall and are extremely drought tolerant. The cotton color ranges from light tan to a rich golden brown. This type ma.</li>
+                   
+                </ul>
+            
+            </section>
+         
+            </section>
+            <section>
+                <h1>Harvesting</h1>
+				<p>Cotton is slow to mature. It takes 70 days of warm weather (above 60°F) before the cotton plant flowers. After flowering, the plant will need an additional 50 days before it forms seed pods. The cotton is part of the seed pod or boll.</p>
+				<p>Cotton has a long harvest period of 4-6 weeks. The bolls will become dry and hard. When they break open and reveal the cotton they are ready to harvest. The harvest usually starts in July in Southern states and ends in November in Northern states.
+
+Each plant can yield up to one hundred cotton bolls. It is best to wear gloves when you pick the bolls because the inside is extremely prickly. Grasp the ball of cotton and twist it to remove it from the shell</p>
+                </ul>
+            </section>
+            <section>
+                <h1>     Common Pests and Diseases           </h1>
+                <p>Effective pest and disease management is essential to protect your cotton plants from potential threats. Regular scouting and monitoring can help you identify and address any issues promptly. Implement integrated pest management practices and consider using organic or chemical controls when necessary, ensuring the health and productivity of your cotton crop.</p>
+
+        <div id="tel" style="display: none;">
+            
+        </div>
+
+    </body>
+</html>
